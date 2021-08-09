@@ -1,0 +1,701 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data Management Overview &mdash; FOSS Fall 2021 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/cyverse.js"></script>
+        <script src="../_static/detail-expand.js"></script>
+        <script src="../_static/question-answer.js"></script>
+        <script src="../_static/intercom-script-for-learning.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/cyverse.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/detail-expand.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/question-answer.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> FOSS Fall 2021
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home Page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pre_foss/index.html">Before FOSS Starts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pre_foss/index.html#pre-foss-survey">Pre-FOSS Survey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pre_foss/index.html#pre-foss-skills-workshop">Pre-FOSS Skills Workshop</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pre_foss/index.html#should-i-attend">Should I attend?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pre_foss/index.html#installing-software-for-foss">Installing software for FOSS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../schedule.html">Schedule</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-0-pre-foss-workshop">Week 0 (pre-FOSS workshop)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-1">Week 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-2">Week 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-3">Week 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-4">Week 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-5">Week 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-6">Week 6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-7">Week 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-8">Week 8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-9">Week 9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-10">Week 10</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#general-faqs">General FAQs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#how-do-i">How do I …</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Workshop Content</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../01_intro_open_sci.html">Intro to Open Science</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../01_intro_open_sci.html#what-is-open-science">What is Open Science?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../01_intro_open_sci.html#introduction-to-cyverse">Introduction to CyVerse</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../02_example_pipeline.html">Example Project Pipeline</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../02_example_pipeline.html#basic-steps">Basic Steps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../02_example_pipeline.html#manage-raw-data">1. Manage raw data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../02_example_pipeline.html#clean-data">2. Clean data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../02_example_pipeline.html#analyze-data">3. Analyze data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../02_example_pipeline.html#produce-figures-tables">4. Produce figures/tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../02_example_pipeline.html#generate-report">5. Generate report</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../02_example_pipeline.html#download-files">Download Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../03_managing_data.html">Managing Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#why-should-you-care-about-data-management">Why should you care about data management?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#data-self-assessment">Data Self-assessment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#data-management-basics">Data Management Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#data-types">Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#best-practices-for-the-data-life-cycle">Best practices for the data life cycle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../03_managing_data.html#references-and-resources">References and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#fair-data">FAIR Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#data-management-plans">Data Management Plans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#preregistration">Preregistration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#cyverse-data-store-commons">CyVerse Data Store/Commons</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../03_managing_data.html#data-management-overview"><strong>Data Management Overview</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_managing_data.html#id1"><strong>FAIR Data</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#fair-principles">FAIR Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#care-principles">CARE Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#fair-tlc">FAIR - TLC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#how-to-get-to-fair">How to get to FAIR?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../03_managing_data.html#id2">References and Resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../03_managing_data.html#data-management-plans-dmp"><strong>Data Management Plans (DMP)</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#elements-of-a-good-dmp">Elements of a good DMP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../03_managing_data.html#machine-actionable-dmps">Machine actionable DMPs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#tools-for-dmps">Tools for DMPs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#id3">References and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../04_documentation_communication.html">Documentation and Communication</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../04_documentation_communication.html#documentation">Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../04_documentation_communication.html#internal">Internal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../04_documentation_communication.html#external">External</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../04_documentation_communication.html#communication">Communication</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../04_documentation_communication.html#id1">Internal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../04_documentation_communication.html#id2">External</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../05_version_control.html">Version Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../05_version_control.html#reviewing-the-basics">Reviewing the basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../05_version_control.html#branching">Branching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../06_repetition.html">Repetition</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../06_repetition.html#what-do-we-mean-by-repitition">What do we mean by repitition?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../06_repetition.html#writing-scripts">Writing scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../06_repetition.html#managing-software">Managing Software</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../07_reproducibility.html">Reproducibility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../07_reproducibility.html#what-is-reproducibility">What is reproducibility?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../07_reproducibility.html#necessary-components">Necessary components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../07_reproducibility.html#containers">Containers</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Final Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../final_project/overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../final_project/overview.html#objectives">Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../final_project/overview.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../final_project/overview.html#timeline">Timeline</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../final_project/examples.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../final_project/examples.html#pre-foss-survey">Pre-FOSS Survey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../final_project/examples.html#pre-foss-skills-workshop">Pre-FOSS Skills Workshop</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../final_project/examples.html#should-i-attend">Should I attend?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../final_project/examples.html#installing-software-for-foss">Installing software for FOSS</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">FOSS Fall 2021</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li><strong>Data Management Overview</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Data_management/overview.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a class="reference external" href="http://learning.cyverse.org/"><img alt="CyVerse_logo" src="Data_management/./img/cyverse_learning.png" style="width: 500px;" /></a></p>
+<p><a href="#id59"><span class="problematic" id="id60">|Home_Icon2|_</span></a>
+<a class="reference external" href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<div class="section" id="data-management-overview">
+<h1><strong>Data Management Overview</strong><a class="headerlink" href="#data-management-overview" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-learning-objectives admonition">
+<p class="admonition-title">learning-objectives</p>
+<ul class="simple">
+<li><p>Recognize data as the foundation of open science and be able to
+describe the “life cycle of data”</p></li>
+<li><p>Use self-assessments to evaluate your current data management practices</p></li>
+<li><p>Cite tools and resources to improve your data management practices</p></li>
+<li><p>Know the biggest challenge to effective data management</p></li>
+</ul>
+</div>
+<div class="section" id="why-should-you-care-about-data-management">
+<h2>Why should you care about data management?<a class="headerlink" href="#why-should-you-care-about-data-management" title="Permalink to this headline">¶</a></h2>
+<p>Data is the raw currency of open science. Most work centers on creating data or
+adding to its value. The goal of this section is to highlight how you can make
+your data more valuable by managing it more effectively and with less effort.</p>
+<blockquote>
+<div><div class="admonition-how-would-you-answer admonition">
+<p class="admonition-title">How would you answer?</p>
+<p>If you give your data to a colleague who has not been involved with your project, would they be able to make sense of it? Would they be able to use it properly?</p>
+<p>If you come back to your own data in five years, will you be able to make sense of it? Will you be able to use it properly?</p>
+<p>When you are ready to publish a paper, is it easy to find all the correct versions of all the data you used and present them in a comprehensible manner?</p>
+</div>
+</div></blockquote>
+<p>Data management skills produce self-describing datasets that:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Make life much easier for you and your collaborators</p></li>
+<li><p>Benefit the scientific research community by allowing others to
+reuse your data</p></li>
+<li><p>Are required by most funders and many journals</p>
+<ul>
+<li><p>Recent <a href="#id3"><span class="problematic" id="id4">|Dear Colleague letter|</span></a> from NSF</p></li>
+<li><p>NSF <a href="#id5"><span class="problematic" id="id6">|proposal preparation guidelines|</span></a></p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<hr class="docutils" />
+<div class="section" id="data-self-assessment">
+<h2>Data Self-assessment<a class="headerlink" href="#data-self-assessment" title="Permalink to this headline">¶</a></h2>
+<p><strong>Part I: Basic questions</strong></p>
+<p>Here are some questions about how you manage and work with data. We will complete some more formal assessments later, but for now let’s see where you are.</p>
+<blockquote>
+<div><div class="admonition-question admonition">
+<p class="admonition-title">Question</p>
+<p>In small groups, discuss the following questions. You will be provided
+with a space for documenting our shared answers.</p>
+<ol class="arabic">
+<li><p>What are the two or three data types that you most frequently work with?</p></li>
+<li><p>What is the scale of your data?</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We often talk about the scale of data using the <a href="#id7"><span class="problematic" id="id8">|&quot;Three V's&quot;|</span></a>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Volume: Size of the data (MBs, GBs, TBs); can also
+include how many files (e.g dozens of big files, or millions
+of small ones)</p></li>
+<li><p>Velocity: How quickly are these data produced and analyzed?
+A lot coming in a single batch infrequently, or, a constant
+small amount of data that must be rapidly analyzed?</p></li>
+<li><p>Variety: How many different data types (raw files? databases?)</p></li>
+</ul>
+</div></blockquote>
+<p>A forth V (Veracity) captures the need to make decisions about
+data processing (i.e., separating low- and high-quality data)</p>
+</div>
+</li>
+<li><p>What is your strategy for storing and backing up your data?</p></li>
+<li><p>What is your strategy for verifying the integrity of your data?
+(i.e. verifying that your data has not be altered)</p></li>
+<li><p>What is your strategy for searching your data?</p></li>
+<li><p>What is your strategy for sharing (and getting credit for) your
+data?
+(i.e. How will do you share with your community/clients? How
+is that sharing documented? How do you evaluate the impact
+of data shared? )</p></li>
+</ol>
+</div>
+</div></blockquote>
+</div>
+<hr class="docutils" />
+<div class="section" id="data-management-basics">
+<h2>Data Management Basics<a class="headerlink" href="#data-management-basics" title="Permalink to this headline">¶</a></h2>
+<p>Let’s learn a little more about data so that we can evaluate your self-
+assessment responses.</p>
+<blockquote>
+<div><div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>The Data Life Cycle</strong></p>
+<blockquote>
+<div><p><em>Data management</em> is the set of practices that allow researchers to effectively and efficiently handle data throughout the data life cycle. Although typically shown as a circle (below) the actually life cycle of any data item may follow a different path, with branches and internal loops. Being aware of your data’s future helps you plan how to best manage them.</p>
+<p><a href="#id9"><span class="problematic" id="id10">|lifecycle|</span></a></p>
+<p>Image from <a href="#id11"><span class="problematic" id="id12">|Strasser et al.|</span></a>.</p>
+</div></blockquote>
+</div>
+</div></blockquote>
+</div>
+<hr class="docutils" />
+<div class="section" id="data-types">
+<h2>Data Types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h2>
+<p>Different types of data require different management practices.
+What are some data types and sources you might use in your work? (Adapted from
+DMP Tool <a href="#id13"><span class="problematic" id="id14">|Data management general guidance|</span></a>)</p>
+<p><strong>Data Types</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Text: field or laboratory notes, survey responses</p></li>
+<li><p>Numeric: tables, counts, measurements</p></li>
+<li><p>Audiovisual: images, sound recordings, video</p></li>
+<li><p>Models, computer code</p></li>
+<li><p>Discipline-specific: FASTA in biology, FITS in astronomy, CIF in
+chemistry</p></li>
+<li><p>Instrument-specific: equipment outputs</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Data Sources</strong></p>
+<p><em>Observational</em></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Captured in real-time, typically outside the lab</p></li>
+<li><p>Usually irreplaceable and therefore the most important to safeguard</p></li>
+<li><p>Examples: Sensor readings, telemetry, survey results, images</p></li>
+</ul>
+</div></blockquote>
+<p><em>Experimental</em></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Typically generated in the lab or under controlled conditions</p></li>
+<li><p>Often reproducible, but can be expensive or time-consuming</p></li>
+<li><p>Examples: gene sequences, chromatograms, magnetic field readings</p></li>
+</ul>
+</div></blockquote>
+<p><em>Simulation</em></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Machine generated from test models</p></li>
+<li><p>Likely to be reproducible if the model and inputs are preserved</p></li>
+<li><p>Examples: climate models, economic models</p></li>
+</ul>
+</div></blockquote>
+<p><em>Derived / Compiled</em></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Generated from existing datasets</p></li>
+<li><p>Reproducible, but can be very expensive and time-consuming</p></li>
+<li><p>Examples: text and data mining, compiled database, 3D models</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Part II: Data-specific questions</strong></p>
+<p>Here are some questions about how you manage and work with data. We will complete some more formal assessments later, but for now let’s see where you are.</p>
+<blockquote>
+<div><div class="admonition-question admonition">
+<p class="admonition-title">Question</p>
+<p>In small groups, discuss the following questions. You will be provided
+with a space for documenting our shared answers.</p>
+<ol class="arabic simple">
+<li><p>Which of the following data types (above) do you frequently work with?</p></li>
+<li><p>Do you follow specific recommendations for managing the data you
+work with? If not, do you know if guidelines exist?</p></li>
+</ol>
+</div>
+</div></blockquote>
+</div>
+<hr class="docutils" />
+<div class="section" id="best-practices-for-the-data-life-cycle">
+<h2>Best practices for the data life cycle<a class="headerlink" href="#best-practices-for-the-data-life-cycle" title="Permalink to this headline">¶</a></h2>
+<p><strong>The most important thing to remember about data management is that you are
+not alone.</strong> There are data management experts within your discipline, many of
+them not farther away than your university library system. In addition, there
+are many organizations (including many cited below) which work to solve.</p>
+<blockquote>
+<div><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>The biggest challenge to effective data management</strong></p>
+<p>The biggest challenge to data management making it an afterthought.</p>
+<p>Unfortunately, poor data management doesn’t have a high upfront cost. You
+can do substantial work before realizing you are in trouble. Like a swimmer
+in rip current, by the time you realize you are in trouble, you may already
+be close to drowning.</p>
+<p>The solution? Make data management the first thing you consider when
+starting a research project. It also needs to be a policy you institute
+right away for your research group.</p>
+</div>
+</div></blockquote>
+<p>Here are some excellent steps to consider. The summary below is adapted from the excellent <a href="#id15"><span class="problematic" id="id16">|DataONE best practices primer|</span></a>.</p>
+<p><strong>Plan</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Describe the data that will be compiled, and how the data will
+be managed and made accessible throughout its lifetime</p></li>
+<li><p>A good plan considers each of the stages below</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Collect</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Have a plan for data organization in place before collecting
+data</p></li>
+<li><p>Collect and store observation metadata at the same time you
+collect the metadata</p></li>
+<li><p>Take advantage of machine generated metadata</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Assure</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Record any conditions during collection that might affect the
+quality of the data</p></li>
+<li><p>Distinguish estimated values from measured values</p></li>
+<li><p>Double check any data entered by hand</p></li>
+<li><p>Perform statistical and graphical summaries (e.g., max/min,
+average, range) to check for questionable or impossible values.</p></li>
+<li><p>Mark data quality, outliers, missing values, etc.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Describe:</strong></p>
+<blockquote>
+<div><ul>
+<li><p>Comprehensive data documentation (i.e. metadata) is the key to
+future understanding of data. Without a thorough description of
+the context of the data, the context in which they were
+collected, the measurements that were made, and the quality of
+the data, it is unlikely that the data can be easily discovered,
+understood, or effectively used.</p></li>
+<li><p>Organize your data for publication. Before you can describe your
+data, you must decide how to organize them. This should be
+planned before hand, so that data organization is a minimal task
+at the time of publication.</p></li>
+<li><p>Thoroughly describe the dataset (e.g., name of dataset, list of
+files, date(s) created or modified, related datasets) including the people
+and organizations involved in data collection (e.g.,
+authors, affiliations, sponsor). Also include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>An <a href="#id17"><span class="problematic" id="id18">|ORCID|</span></a> (obtain one if you don’t have one).</p></li>
+<li><p>The scientific context (reason for collecting the data, how
+they were collected, equipment and software used to generate the data,
+conditions during data collection, spatial and temporal resolution)</p></li>
+<li><p>The data themselves</p>
+<ul>
+<li><p>How each measurement was produced</p></li>
+<li><p>Units</p></li>
+<li><p>Format</p></li>
+<li><p>Quality assurance activities</p></li>
+<li><p>Precision, accuracy, and uncertainty</p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>Metadata standards and ontologies are invaluable for supporting data reuse.
+Metadata standards tell you:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Which metadata attributes to include</p></li>
+<li><p>How to format your metadata</p></li>
+<li><p>What values are allowable for different attributes</p></li>
+</ul>
+</div></blockquote>
+<p>Some metadata standards you may want to consider:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a href="#id19"><span class="problematic" id="id20">|DataCite|</span></a> for publishing data</p></li>
+<li><p><a href="#id21"><span class="problematic" id="id22">|Dublin Core|</span></a> for sharing data on the web</p></li>
+<li><p><a href="#id23"><span class="problematic" id="id24">|MIxS|</span></a> Minimum Information for any (x) sequence</p></li>
+<li><p><a href="#id25"><span class="problematic" id="id26">|OGC standards|</span></a> for geospatial data</p></li>
+</ul>
+</div></blockquote>
+<p>Ontologies provide standardization for metadata values:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Example: <a href="#id27"><span class="problematic" id="id28">|Environment Ontology|</span></a> terms for the MIxS standards</p></li>
+<li><p>Example: <a href="#id29"><span class="problematic" id="id30">|Plant Ontology|</span></a> for plant tissue types or development stages</p></li>
+<li><p><a href="#id31"><span class="problematic" id="id32">|FAIRSharing.org|</span></a> lists standards and ontologies for life sciences.</p></li>
+</ul>
+</div></blockquote>
+<p>The CyVerse Data Commons supports good data description through:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Metadata templates</p></li>
+<li><p>Bulk metadata upload</p></li>
+<li><p>Automatic collection of analysis parameters, inputs, and outputs
+in the DE.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Preserve</strong></p>
+<p>In general, data must be preserved in an appropriate long-term archive (i.e.
+data center). Here are some examples:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Sequence data should go to a national repository, frequently <a href="#id33"><span class="problematic" id="id34">|NCBI|</span></a></p></li>
+<li><p>Identify data with value – it may not be necessary to preserve
+all data from a project</p></li>
+<li><p>The CyVerse <a href="#id35"><span class="problematic" id="id36">|Data Commons|</span></a> provides a place to publish and preserve data
+that was generated on or can be used in CyVerse, where no other repository exists.</p></li>
+<li><p>See lists of repositories at <a href="#id37"><span class="problematic" id="id38">|FAIRSharing.org|</span></a></p></li>
+<li><p>See lists of repositories at <a href="#id39"><span class="problematic" id="id40">|Data Dryad|</span></a></p></li>
+<li><p>Github repos can get DOIs through <a href="#id41"><span class="problematic" id="id42">|Zenodo|</span></a></p></li>
+<li><p>Be aware of licensing and other intellectual property issues</p>
+<ul>
+<li><p>Repositories will require some kind of license, often the least
+restrictive (see for example <a href="#id43"><span class="problematic" id="id44">|Creative Commons|</span></a></p></li>
+<li><p>Repositories are unlikely to enforce reuse restrictions, even if you apply
+them.</p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Discover</strong></p>
+<blockquote>
+<div><ul>
+<li><p>Good metadata allows you to discover your own data!</p></li>
+<li><p>Databases, repositories, and search indices provide ways to
+discover relevant data for reuse</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a href="#id45"><span class="problematic" id="id46">|Google dataset search|</span></a></p></li>
+<li><p><a href="#id47"><span class="problematic" id="id48">|DataOne|</span></a></p></li>
+<li><p><a href="#id49"><span class="problematic" id="id50">|FAIRSharing.org|</span></a></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Integrate</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Data integration is a lot of work</p></li>
+<li><p>Standards and ontologies are key to future data integration</p></li>
+<li><p>Know the data before you integrate them</p></li>
+<li><p>Don’t trust that two columns with the same header are the same data</p></li>
+<li><p>Properly cite the data you reuse!</p></li>
+<li><p>Use DOIs (<a href="#id51"><span class="problematic" id="id52">|Digital Object Identifiers|</span></a>) wherever possible</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Analyze</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Follow open science principles for reproducible analyses
+(CyVerse, RStudio, notebooks, IDEs)</p></li>
+<li><p>State your hypotheses and analysis workflow before collecting
+data. Tools like <a href="#id53"><span class="problematic" id="id54">|Open Science Framework|</span></a> (OSF) allow you to make this
+public.</p></li>
+<li><p>Record all software, parameters, inputs, etc.</p></li>
+</ul>
+</div></blockquote>
+<hr class="docutils" />
+<div class="section" id="references-and-resources">
+<h3>References and Resources<a class="headerlink" href="#references-and-resources" title="Permalink to this headline">¶</a></h3>
+<p><a href="#id55"><span class="problematic" id="id56">|DataOne best practices|</span></a></p>
+<p><a href="#id57"><span class="problematic" id="id58">|Center for Open Science|</span></a></p>
+<hr class="docutils" />
+<p><strong>Fix or improve this documentation:</strong></p>
+<ul class="simple">
+<li><p>On Github: <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/Data_management/overview.rst" target="blank">Github Repo Link</a></p></li>
+<li><p>Send feedback: <a class="reference external" href="mailto:Tutorials&#37;&#52;&#48;CyVerse&#46;org">Tutorials<span>&#64;</span>CyVerse<span>&#46;</span>org</a></p></li>
+</ul>
+<hr class="docutils" />
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, CyVerse
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

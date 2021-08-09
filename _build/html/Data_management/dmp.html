@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Data Management Plans (DMP) &mdash; CyVerse Learning:    Foundational Open Science Skills 2021 spring-2021 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/cyverse.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/detail-expand.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/question-answer.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/cyverse.js"></script>
+        <script src="../_static/detail-expand.js"></script>
+        <script src="../_static/question-answer.js"></script>
+        <script src="../_static/intercom-script-for-learning.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Data Management Tools" href="dmtools.html" />
+    <link rel="prev" title="FAIR Data" href="FAIR.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CyVerse Learning:    Foundational Open Science Skills 2021
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                spring-2021
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Workshop Home</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Before FOSS Starts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../before/installation.html"><strong>Pre-FOSS Setup</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Key Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/schedule.html"><strong>Schedule</strong></a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.cyverse.org/foss#instructors">Instructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/code_of_conduct.html"><strong>Code of Conduct</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/open_sci_lab.html"><strong>Open Science Introductory Activity</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/goals.html">Goals and Approach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/glossary.html"><strong>Glossary &amp; Acronyms</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using CyVerse</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CyVerse/intro_to_cyverse.html"><strong>About CyVerse</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CyVerse/data_store.html"><strong>Accessing Data Store</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CyVerse/de-data-manage.html"><strong>Discovery Environment - Data Management</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Cyberinfrastructure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_comput/intro.html"><strong>Introduction to Cloud Computing</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_comput/atmo.html"><strong>Atmosphere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_comput/xsede.html"><strong>Research Cyberinfrastructure associated with CyVerse</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_comput/cyberinfrastructure.html"><strong>Other Cyberinfrastructure Projects</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Data Management</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html"><strong>Data Management Overview</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAIR.html"><strong>FAIR Data</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Data Management Plans (DMP)</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#elements-of-a-good-dmp">Elements of a good DMP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#machine-actionable-dmps">Machine actionable DMPs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tools-for-dmps">Tools for DMPs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references-and-resources">References and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dmtools.html"><strong>Data Management Tools</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Essential Skills</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CyVerse/de-data-analysis.html"><strong>Discovery Environment - Data Analysis</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CyVerse/tool_integration_app_building_DE.html"><strong>Discovery Environment - Tools &amp; Apps</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CyVerse/vice.html"><strong>Discovery Environment - VICE</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software_essentials/commandline.html"><strong>Command Line and the Unix Shell</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software_essentials/linux.html"><strong>Basics of Linux</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reproducible Science</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/intro.html"><strong>Introduction to Reproducible Science</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/communication.html"><strong>Communication</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/GitHub.html"><strong>GitHub Overview</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/GitHub.html#advanced-git-github-features">Advanced Git &amp; GitHub Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/websites.html"><strong>Websites &amp; Documentation</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/githubpages.html"><strong>GitHub Pages - a quick start</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Containers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Containers/introtocontainers.html"><strong>Introduction to containers</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Containers/dockeronatmo.html">Launching a Docker app on Atmosphere</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Containers/dockerintro.html"><strong>Introduction to Docker</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Containers/dockeradvanced.html"><strong>Advanced Docker</strong></a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CyVerse Learning:    Foundational Open Science Skills 2021</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><strong>Data Management Plans (DMP)</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Data_management/dmp.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a class="reference external" href="http://learning.cyverse.org/"><img alt="CyVerse_logo" src="../_images/cyverse_learning.png" style="width: 500px;" /></a></p>
+<p><a class="reference external" href="http://learning.cyverse.org/"><img alt="Home_Icon2" src="../_images/homeicon.png" style="width: 25px; height: 25px;" /></a>
+<a class="reference external" href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<div class="section" id="data-management-plans-dmp">
+<h1><strong>Data Management Plans (DMP)</strong><a class="headerlink" href="#data-management-plans-dmp" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-learning-objectives admonition">
+<p class="admonition-title">learning-objectives</p>
+<ul class="simple">
+<li><p>Describe the purpose of a data management plan</p></li>
+<li><p>Describe the important elements of a data management plan</p></li>
+<li><p>Use a self-assessment to design a data management plan</p></li>
+</ul>
+</div>
+<p>“A data management plan or DMP is a formal document that outlines how data are to be handled both during a research project, and after the project is completed.[1] The goal of a data management plan is to consider the many aspects of data management, metadata generation, data preservation, and analysis before the project begins; this may lead to data being well-managed in the present, and prepared for preservation in the future.”</p>
+<p>(Source: <a class="reference external" href="https://en.wikipedia.org/wiki/Data_management_plan">https://en.wikipedia.org/wiki/Data_management_plan</a>)</p>
+<p><a class="reference external" href="../slides/DMPFuTRES_v2.docx">Example DMP</a></p>
+<hr class="docutils" />
+<p><strong>Why bother with a DMP?</strong></p>
+<blockquote>
+<div><blockquote>
+<div><div class="admonition-how-would-you-answer admonition">
+<p class="admonition-title">How would you answer?</p>
+<p>Do you have a data management plan? If so, how do you use it?</p>
+</div>
+</div></blockquote>
+<p><em>“Those who fail to plan, plan to fail”</em></p>
+</div></blockquote>
+<p>Returning to the assertion that data (and its value) is at the foundation of
+your science, working without a data management plan should be considered
+scientific misconduct.</p>
+<p>Those are strong words. And while we might have an intuition of the boundaries
+of research ethics - data mismanagement seems more like an annoyance than
+misconduct. However, if your mismanagement leads to error in your research
+data, or the inability to make publicly-funded research open to the public,
+these are serious consequences. Increasingly, funders realize this.</p>
+<p><strong>Stick:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp">You have to make one</a></p></li>
+<li><p>Reviewers definitely look at them, but they may not be enforced.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Carrot:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Make your life easier</p></li>
+<li><p>Planning for you project makes it run more smoothly</p></li>
+<li><p>Avoid surprise costs</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="elements-of-a-good-dmp">
+<h2>Elements of a good DMP<a class="headerlink" href="#elements-of-a-good-dmp" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul>
+<li><p>Information about data &amp; data format(s)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>data types</p></li>
+<li><p>data sources</p></li>
+<li><p>analysis methods</p></li>
+<li><p>formats</p></li>
+<li><p>QA/QC</p></li>
+<li><p>version control</p></li>
+<li><p><strong>data life cycle</strong></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Metadata content and format(s)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>format</p></li>
+<li><p>standards</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Policies for access, sharing, and re-use</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>funder obligations</p></li>
+<li><p>ethical and privacy issues (data justice)</p></li>
+<li><p>intellectual property, copyright, citation</p></li>
+<li><p>timeline for releases</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Long-term storage, data management, and preservation</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>which data to preserve</p></li>
+<li><p>which archive/repository</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Budget (<a class="reference external" href="https://www.nsf.gov/pubs/policydocs/pappg19_1/pappg_2.jsp#IIC2gvib">PAPPG</a>)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>each of the above elements cost time/money</p></li>
+<li><p>Personnel time for data preparation, management, documentation, and preservation (including time)</p></li>
+<li><p>Hardware and/or software for data management, back up, security, documentation, and preservation (including time)</p></li>
+<li><p>Publication/archiving costs (including time)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>Not only what, but <em>who</em> (roles).</p>
+<p>Extra challenges for collaborative projects.</p>
+<div class="section" id="machine-actionable-dmps">
+<h3>Machine actionable DMPs<a class="headerlink" href="#machine-actionable-dmps" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>DMPs describe research methods that will evolve over the course of a project</p></li>
+<li><p>to be a useful tool for researchers and others, the content must be updated to capture the methods that are employed and the data that are produced</p></li>
+</ul>
+</div></blockquote>
+<p><img alt="maDMP" src="../_images/journal.pcbi.1006750.g002.png" /></p>
+<blockquote>
+<div><p>(Source: <a class="reference external" href="https://doi.org/10.1371/journal.pcbi.1006750.g002">https://doi.org/10.1371/journal.pcbi.1006750.g002</a>)</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="tools-for-dmps">
+<h2>Tools for DMPs<a class="headerlink" href="#tools-for-dmps" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-exercise admonition">
+<p class="admonition-title">Exercise</p>
+<p>Thinking about a dataset you work with, complete the <a href="https://ds-wizard.org/" target="blank">Data Stewardship Wizzard</a>.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="references-and-resources">
+<h2>References and Resources<a class="headerlink" href="#references-and-resources" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://www.nsf.gov/bio/biodmp.jsp">NSF Guidelines on DMPs</a></p></li>
+<li><p><a class="reference external" href="https://dmptool.org/general_guidance">https://dmptool.org/general_guidance</a></p></li>
+<li><p><a class="reference external" href="https://dmptool.org/public_templates">https://dmptool.org/public_templates</a></p></li>
+<li><p>Professional and scholarly societies, e.g., theEcological Society of America <a class="reference external" href="http://www.esa.org/esa/science/data-sharing/resources-and-tools/">http://www.esa.org/esa/science/data-sharing/resources-and-tools/</a></p></li>
+<li><p>DataOne - <a class="reference external" href="https://www.dataone.org/best-practices">https://www.dataone.org/best-practices</a></p></li>
+<li><p>Data Carpentry - <a class="reference external" href="http://datacarpentry.org/">http://datacarpentry.org/</a></p></li>
+<li><p>The US Geological Survey <a class="reference external" href="http://www.usgs.gov/datamanagement/index.php">http://www.usgs.gov/datamanagement/index.php</a></p></li>
+<li><p>Repository registry (and search) service: <a class="reference external" href="http://www.re3data.org/">http://www.re3data.org/</a></p></li>
+<li><p>Your university library</p></li>
+</ul>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>Fix or improve this documentation:</strong></p>
+<ul class="simple">
+<li><p>On Github: <a href="https://github.com/CyVerse-learning-materials/foss-2019/tree/master/Data_management/dmp.rst" target="blank">Github Repo Link</a></p></li>
+<li><p>Send feedback: <a class="reference external" href="mailto:Tutorials&#37;&#52;&#48;CyVerse&#46;org">Tutorials<span>&#64;</span>CyVerse<span>&#46;</span>org</a></p></li>
+</ul>
+<hr class="docutils" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="dmtools.html" class="btn btn-neutral float-right" title="Data Management Tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="FAIR.html" class="btn btn-neutral float-left" title="FAIR Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, CyVerse.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

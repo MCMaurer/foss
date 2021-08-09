@@ -1,0 +1,565 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Command Line and the Unix Shell &mdash; CyVerse Learning:    Foundational Open Science Skills 2021 spring-2021 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/cyverse.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/detail-expand.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/question-answer.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/cyverse.js"></script>
+        <script src="../_static/detail-expand.js"></script>
+        <script src="../_static/question-answer.js"></script>
+        <script src="../_static/intercom-script-for-learning.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Basics of Linux" href="linux.html" />
+    <link rel="prev" title="Discovery Environment - VICE" href="../CyVerse/vice.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CyVerse Learning:    Foundational Open Science Skills 2021
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                spring-2021
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Workshop Home</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Before FOSS Starts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../before/installation.html"><strong>Pre-FOSS Setup</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Key Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/schedule.html"><strong>Schedule</strong></a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.cyverse.org/foss#instructors">Instructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/code_of_conduct.html"><strong>Code of Conduct</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/open_sci_lab.html"><strong>Open Science Introductory Activity</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/goals.html">Goals and Approach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/glossary.html"><strong>Glossary &amp; Acronyms</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using CyVerse</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CyVerse/intro_to_cyverse.html"><strong>About CyVerse</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CyVerse/data_store.html"><strong>Accessing Data Store</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CyVerse/de-data-manage.html"><strong>Discovery Environment - Data Management</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Cyberinfrastructure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_comput/intro.html"><strong>Introduction to Cloud Computing</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_comput/atmo.html"><strong>Atmosphere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_comput/xsede.html"><strong>Research Cyberinfrastructure associated with CyVerse</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_comput/cyberinfrastructure.html"><strong>Other Cyberinfrastructure Projects</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Data Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Data_management/overview.html"><strong>Data Management Overview</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Data_management/FAIR.html"><strong>FAIR Data</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Data_management/dmp.html"><strong>Data Management Plans (DMP)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Data_management/dmtools.html"><strong>Data Management Tools</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Essential Skills</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../CyVerse/de-data-analysis.html"><strong>Discovery Environment - Data Analysis</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CyVerse/tool_integration_app_building_DE.html"><strong>Discovery Environment - Tools &amp; Apps</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CyVerse/vice.html"><strong>Discovery Environment - VICE</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Command Line and the Unix Shell</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#why-should-you-care-about-the-shell">Why should you care about the shell?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-our-shell-environment">Setting up Our Shell Environment:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction-to-shell-commands">Introduction to Shell Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accessing-the-data-store-via-the-shell">Accessing the Data Store via the Shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#further-practice">Further Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="linux.html"><strong>Basics of Linux</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reproducible Science</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/intro.html"><strong>Introduction to Reproducible Science</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/communication.html"><strong>Communication</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/GitHub.html"><strong>GitHub Overview</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/GitHub.html#advanced-git-github-features">Advanced Git &amp; GitHub Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/websites.html"><strong>Websites &amp; Documentation</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/githubpages.html"><strong>GitHub Pages - a quick start</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Containers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Containers/introtocontainers.html"><strong>Introduction to containers</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Containers/dockeronatmo.html">Launching a Docker app on Atmosphere</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Containers/dockerintro.html"><strong>Introduction to Docker</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Containers/dockeradvanced.html"><strong>Advanced Docker</strong></a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CyVerse Learning:    Foundational Open Science Skills 2021</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><strong>Command Line and the Unix Shell</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/software_essentials/commandline.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a class="reference external" href="http://learning.cyverse.org/"><img alt="CyVerse_logo" src="../_images/cyverse_learning.png" style="width: 500px;" /></a></p>
+<p><a class="reference external" href="http://learning.cyverse.org/"><img alt="Home_Icon2" src="../_images/homeicon.png" style="width: 25px; height: 25px;" /></a>
+<a class="reference external" href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<div class="section" id="command-line-and-the-unix-shell">
+<h1><strong>Command Line and the Unix Shell</strong><a class="headerlink" href="#command-line-and-the-unix-shell" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-learning-objectives admonition">
+<p class="admonition-title">learning-objectives</p>
+<ul class="simple">
+<li><p>Know the command line’s utility</p></li>
+<li><p>Define what the filesysem is</p></li>
+<li><p>Use basic navigation commands to interact with the file system</p></li>
+<li><p>Recognize the similarities between shell commands and iRODS</p></li>
+<li><p>Describe resources to continue learning command line applications</p></li>
+</ul>
+</div>
+<div class="section" id="why-should-you-care-about-the-shell">
+<h2>Why should you care about the shell?<a class="headerlink" href="#why-should-you-care-about-the-shell" title="Permalink to this headline">¶</a></h2>
+<p><em>At a high level, computers do four things:</em></p>
+<ol class="arabic simple">
+<li><p>run programs</p></li>
+<li><p>store data</p></li>
+<li><p>communicate with each other</p></li>
+<li><p>interact with users</p></li>
+</ol>
+<p><em>The graphical user interface (GUI)</em></p>
+<blockquote>
+<div><p>The GUI is the most widely used way to interact with computers</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Often the first way people learn to interact with a computer</p></li>
+<li><p>Give instructions with mouse (ex. run a program, create a folder/directory, move files, etc.)</p></li>
+<li><p>Difficult to scale since it requires human interaction</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<p><em>The shell - a command-line interface (CLI)</em>.</p>
+<p>Less common way to interact with personal computers.
+Enables remote access to servers and analyses.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Can automate repetitive tasks</p></li>
+<li><p>Commands are reproducible</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example</p>
+<p>If we have to copy the third line of each of a thousand text files stored
+in thousand different folders/directories and paste it into a single file line by line.</p>
+<ul class="simple">
+<li><p>Using the traditional GUI approach will take several hours to do this.</p></li>
+<li><p>Using the shell this will only take a couple of minutes (at most).</p></li>
+</ul>
+</div>
+<p>The Shell is a <strong>program which runs other programs</strong> rather than doing calculations itself.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>programs can be as complicated as a climate modeling software</p></li>
+<li><p>as simple as a program that creates a new folder/directory</p></li>
+<li><p><strong>simple programs used to perform stand alone tasks are usually refered to as commands.</strong></p></li>
+<li><p>most popular Unix shell is <strong>Bash</strong>, (the Bourne Again SHell).</p></li>
+<li><p>Bash is the default shell on most modern implementations of Unix</p></li>
+</ul>
+</div></blockquote>
+<p>Whether accessed through the graphical user interface or the shell, all computers contain a file system.</p>
+<p><a class="reference internal" href="../_images/cmd2.png"><img alt="TheFileSystem" src="../_images/cmd2.png" style="width: 400px; height: 250px;" /></a></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="setting-up-our-shell-environment">
+<h2>Setting up Our Shell Environment:<a class="headerlink" href="#setting-up-our-shell-environment" title="Permalink to this headline">¶</a></h2>
+<p><em>Launch JupyterLab VICE Application:</em></p>
+<p>Search for the application <cite>Jupyter Lab SciPy Notebook Latest</cite> here:</p>
+<p><img alt="App Search DE2" src="../_images/jupyter_de2search.png" /></p>
+<p><em>Setup Outputs:</em></p>
+<p><img alt="DE2 App Outputs" src="../_images/jupyter_outputs.png" /></p>
+<p><em>Add Our Input Folder:</em></p>
+<p><img alt="Add input folder DE2" src="../_images/jupyter_input_folder1.png" /></p>
+<p><img alt="Select Folder" src="../_images/de2_select_input.png" /></p>
+<p><em>Memory Allocation:</em></p>
+<p><img alt="Set Memory for Container DE2" src="../_images/set_memory_de2.png" /></p>
+<p><em>Launch Application on DE2:</em></p>
+<p><img alt="Launch App" src="../_images/launch_app_de2.png" /></p>
+<p><em>Launch the Shell in JupyterLab:</em></p>
+<p><img alt="Jupyter Shell Icon Screenshot" src="../_images/launch_terminal_jupyter.png" /></p>
+<p><em>Command Prompt:</em></p>
+<p><img alt="Jupyter Shell Prompt" src="../_images/JupyterShellPrompt.png" /></p>
+<p><em>Optional: Change to JupyterLab Dark Theme</em></p>
+<p><img alt="Dark Theme" src="img/jupyter_dark_theme.png" /></p>
+<div class="admonition-question admonition">
+<p class="admonition-title">Question</p>
+<p>In small, groups help each other get the shell prompt open inside JupyterLab.</p>
+<p>If you all have JupyterLab’s shell launched, please discuss the following question.</p>
+<ol class="arabic simple">
+<li><p>How does learning aspects of the shell help us create FAIR data?</p></li>
+<li><p>Do you think we can use the shell to do data tasks on the CyVerse Data Store?</p></li>
+</ol>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="introduction-to-shell-commands">
+<h2>Introduction to Shell Commands<a class="headerlink" href="#introduction-to-shell-commands" title="Permalink to this headline">¶</a></h2>
+<p><em>Print working directory (pwd)</em></p>
+<p>Directories are equivalent to folders on a desktop computer, but are like an address for the computer’s file system.</p>
+<p>To find  “where” you are we can use the command <cite>pwd</cite>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">pwd</span>
+/home/jovyan/work
+</pre></div>
+</div>
+<p><em>List files and directories (ls)</em></p>
+<p>We can see the contents of our current directory by running <cite>ls</cite>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ls
+data-shell  downloads.stderr.log  downloads.stdout.log
+</pre></div>
+</div>
+<p>Your results may be slightly different depending on your operating system and any system modifications.</p>
+<p><em>Adding Options to ls</em></p>
+<p>With the option, or flag, <cite>-F</cite> we can differentiate between files and folders.
+All folders will appear in the shell prompt with a <cite>/</cite> appended to their names.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ls -F
+data-shell/  downloads.stderr.log  downloads.stdout.log
+</pre></div>
+</div>
+<p><em>Changing Directories</em></p>
+<p>After running <cite>pwd</cite> we know we’re in the directory <cite>/home/joyvan/work</cite>.</p>
+<p>How can we change our location to the <cite>data-shell</cite> directory?
+The <cite>cd</cite> or change directory command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> data-shell
+</pre></div>
+</div>
+<p><em>Making Directories</em></p>
+<p>To make directories in the command line we can use the command <cite>mkdir</cite></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mkdir thesis
+$ ls -F
+creatures/  data/  molecules/  north-pacific-gyre/  notes.txt  pizza.cfg
+solar.pdf  thesis/  writing/
+</pre></div>
+</div>
+<p>Now let’s change into our directory <cite>thesis/</cite></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> thesis
+$ ls -F
+</pre></div>
+</div>
+<p>When we run <cite>ls -F</cite> we don’t see any output in the terminal.</p>
+<p>So let’s make some files in this directory.</p>
+<p><em>Creating Files in the Shell</em></p>
+<div class="admonition-good-names-for-files-and-directories admonition">
+<p class="admonition-title">Good Names for Files and Directories</p>
+<ol class="arabic">
+<li><p>Don’t use spaces.</p>
+<blockquote>
+<div><p>Spaces are used to separate arguments on the command line it is better to avoid them in names of files and directories.
+You can use - or _ instead (e.g. north-pacific-gyre/ rather than north pacific gyre/).</p>
+</div></blockquote>
+</li>
+<li><p>Don’t begin the name with - (dash).</p>
+<blockquote>
+<div><p>Commands treat names starting with - as options or flags.</p>
+</div></blockquote>
+</li>
+<li><p>Stick with letters, numbers, . (period or ‘full stop’), - (dash) and _ (underscore).</p>
+<blockquote>
+<div><p>If you need to refer to names of files or directories that already have spaces or other special characters,
+you should surround the name in quotes (“”).</p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ nano draft.txt
+</pre></div>
+</div>
+<p>Let’s type in a few lines of text.
+Once we’re happy with our text, we can press <strong>Ctrl+O</strong>
+(press the Ctrl or Control key and, while holding it down, press the O key) to write our data to disk (we’ll be asked what file we want to save this to: press <strong>Return</strong> to accept the suggested default of draft.txt).</p>
+<blockquote>
+<div><p><a class="reference internal" href="../_images/cmd15.png"><img alt="nano" src="../_images/cmd15.png" style="width: 750px; height: 200px;" /></a></p>
+</div></blockquote>
+<p>Once our file is saved, we can use <strong>Ctrl-X to quit</strong> the editor and return to the shell.</p>
+<p>In nano, along the bottom of the screen you’ll see ^G Get Help ^O WriteOut. This means that you can use Control-G to get help and Control-O to save your file.</p>
+<p>nano doesn’t leave any output on the screen after it exits, but ls now shows that we have created a file called draft.txt:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ls
+draft.txt
+</pre></div>
+</div>
+<p>We can also use the <cite>touch</cite> command to create files.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ touch my_file.txt
+</pre></div>
+</div>
+<p>How large is <cite>my_file.txt</cite>?? What command can we use to check this?</p>
+<p><em>Getting help with commands</em></p>
+<p>We can pass a –help option to the command, such as:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ls --help
+</pre></div>
+</div>
+<p><em>The man command</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<blockquote>
+<div><p>The man command will only work in the command line with certain systems.</p>
+</div></blockquote>
+<p>The GNU website manual will be useful if this is not available (like in our Docker container).</p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ man ls
+</pre></div>
+</div>
+<p>This will open the manual in your terminal with a description of the ls command and its options and, if you’re lucky, some examples of how to use it.</p>
+<p>To navigate through the man pages, you may use <strong>↑</strong> and <strong>↓</strong> to move line-by-line, or try <strong>B</strong> and <strong>Spacebar</strong> to skip up and down by a full page.</p>
+<p>To quit the man pages, press q.</p>
+<p><em>Manual pages on the web</em></p>
+<p>GNU provides links to its <a class="reference external" href="http://www.gnu.org/manual/manual.html">manuals</a>
+including the <a class="reference external" href="http://www.gnu.org/software/coreutils/manual/coreutils.html">core GNU utilities</a> , which covers many commands introduced within this lesson.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="accessing-the-data-store-via-the-shell">
+<h2>Accessing the Data Store via the Shell<a class="headerlink" href="#accessing-the-data-store-via-the-shell" title="Permalink to this headline">¶</a></h2>
+<p>We can access the data store with a command line toolset called <strong>iRODS</strong>.
+iRODS allows us to move files from the Discovery Environment container to other
+directories in the Data Store.</p>
+<p><em>Configuring iRODS</em></p>
+<p>First let’s configure iRODS with the command <cite>iinit</cite></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ iinit
+
+  Enter the host name <span class="o">(</span>DNS<span class="o">)</span> of the server to connect to: data.cyverse.org
+  Enter the port number: <span class="m">1247</span>
+  Enter your irods user name: &lt;your_cyverse_username&gt;
+  Enter your irods zone: iplant
+  Enter your current iRODS password: &lt;your_cyverse_password&gt;
+</pre></div>
+</div>
+<p><em>Working Directory on the Data Store</em></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ipwd
+/iplant/home/&lt;Your Cyverse Username&gt;
+</pre></div>
+</div>
+<p><em>Changing Directories in the Data Store</em></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ icd /iplant/home/shared/foss/spring-2021
+</pre></div>
+</div>
+<p><em>Optional: Create a folder in the data store</em></p>
+<p>This can be done via the web GUI, like we did earlier.
+Or you can use the command line and iRODS to make
+a folder with the same name as your CyVerse username in the path
+<cite>/iplant/home/shared/foss/spring-2021</cite>. For example after using <cite>icd</cite> above,
+I would write the following:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ipwd
+/iplant/home/shared/foss/spring-2021
+$ imkdir rbartelme
+$ ils
+/iplant/home/shared/foss/spring-2021:
+C- /iplant/home/shared/foss/spring-2021/data-shell
+C- /iplant/home/shared/foss/spring-2021/rbartelme
+</pre></div>
+</div>
+<div class="admonition-fair-data-group-challenge admonition">
+<p class="admonition-title">FAIR Data Group Challenge</p>
+<p>In small groups determine how you can use <cite>irsync</cite> with the flags <cite>-rKva</cite>
+to transfer the folder <cite>molecules</cite> from the <cite>data-shell</cite> directory
+to the data store folder you created in the foss directory in the Data Store.
+From the <a href="https://docs.irods.org/master/icommands/user/#irsync target="blank">iRODS irsync manual</a> determine as a group what makes the command “FAIR”.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<ul class="simple">
+<li><p>You need to add <cite>i:</cite> to the beginning of the file/folder argument to tell iRODS the location of items in the data store.</p></li>
+<li><p><cite>irsync</cite> behaves differently with <cite>/</cite> after the folder name than without the slash.</p></li>
+<li><p>Look up the flags provided above in the irsync manual. Which flag enables a method that checks the validity of the data?</p></li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="further-practice">
+<h2>Further Practice<a class="headerlink" href="#further-practice" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is was just a brief summary of how to use the command line.
+There is much, much more you can do.</p>
+</div>
+<p>For more information check out the <a href="https://swcarpentry.github.io/shell-novice/" target="blank">The Carpentries Shell Lesson</a> page.
+This lesson uses the folder <cite>data-shell</cite> which is already in your Jupyter Lab instance.
+Work through these lessons on your own or in groups as homework.</p>
+<ul class="simple">
+<li><p>On Github: <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/software_essentials/commandline.rst" target="blank">Github Repo Link</a></p></li>
+<li><p>Send feedback: <a class="reference external" href="mailto:Tutorials&#37;&#52;&#48;CyVerse&#46;org">Tutorials<span>&#64;</span>CyVerse<span>&#46;</span>org</a></p></li>
+</ul>
+<hr class="docutils" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="linux.html" class="btn btn-neutral float-right" title="Basics of Linux" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../CyVerse/vice.html" class="btn btn-neutral float-left" title="Discovery Environment - VICE" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, CyVerse.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,504 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GitHub Action and EHT Demo &mdash; FOSS Fall 2021 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/cyverse.js"></script>
+        <script src="../_static/detail-expand.js"></script>
+        <script src="../_static/question-answer.js"></script>
+        <script src="../_static/intercom-script-for-learning.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/cyverse.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/detail-expand.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/question-answer.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> FOSS Fall 2021
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home Page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pre_foss/index.html">Before FOSS Starts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pre_foss/index.html#pre-foss-survey">Pre-FOSS Survey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pre_foss/index.html#pre-foss-skills-workshop">Pre-FOSS Skills Workshop</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pre_foss/index.html#should-i-attend">Should I attend?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pre_foss/index.html#installing-software-for-foss">Installing software for FOSS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../schedule.html">Schedule</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-0-pre-foss-workshop">Week 0 (pre-FOSS workshop)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-1">Week 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-2">Week 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-3">Week 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-4">Week 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-5">Week 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-6">Week 6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-7">Week 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-8">Week 8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-9">Week 9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../schedule.html#week-10">Week 10</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#general-faqs">General FAQs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html#how-do-i">How do I …</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Workshop Content</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../01_intro_open_sci.html">Intro to Open Science</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../01_intro_open_sci.html#what-is-open-science">What is Open Science?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../01_intro_open_sci.html#introduction-to-cyverse">Introduction to CyVerse</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../02_example_pipeline.html">Example Project Pipeline</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../02_example_pipeline.html#basic-steps">Basic Steps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../02_example_pipeline.html#manage-raw-data">1. Manage raw data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../02_example_pipeline.html#clean-data">2. Clean data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../02_example_pipeline.html#analyze-data">3. Analyze data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../02_example_pipeline.html#produce-figures-tables">4. Produce figures/tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../02_example_pipeline.html#generate-report">5. Generate report</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../02_example_pipeline.html#download-files">Download Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../03_managing_data.html">Managing Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#why-should-you-care-about-data-management">Why should you care about data management?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#data-self-assessment">Data Self-assessment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#data-management-basics">Data Management Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#data-types">Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#best-practices-for-the-data-life-cycle">Best practices for the data life cycle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../03_managing_data.html#references-and-resources">References and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#fair-data">FAIR Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#data-management-plans">Data Management Plans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#preregistration">Preregistration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#cyverse-data-store-commons">CyVerse Data Store/Commons</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../03_managing_data.html#data-management-overview"><strong>Data Management Overview</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_managing_data.html#id1"><strong>FAIR Data</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#fair-principles">FAIR Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#care-principles">CARE Principles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#fair-tlc">FAIR - TLC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#how-to-get-to-fair">How to get to FAIR?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../03_managing_data.html#id2">References and Resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../03_managing_data.html#data-management-plans-dmp"><strong>Data Management Plans (DMP)</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#elements-of-a-good-dmp">Elements of a good DMP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../03_managing_data.html#machine-actionable-dmps">Machine actionable DMPs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#tools-for-dmps">Tools for DMPs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_managing_data.html#id3">References and Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../04_documentation_communication.html">Documentation and Communication</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../04_documentation_communication.html#documentation">Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../04_documentation_communication.html#internal">Internal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../04_documentation_communication.html#external">External</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../04_documentation_communication.html#communication">Communication</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../04_documentation_communication.html#id1">Internal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../04_documentation_communication.html#id2">External</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../05_version_control.html">Version Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../05_version_control.html#reviewing-the-basics">Reviewing the basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../05_version_control.html#branching">Branching</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../06_repetition.html">Repetition</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../06_repetition.html#what-do-we-mean-by-repitition">What do we mean by repitition?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../06_repetition.html#writing-scripts">Writing scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../06_repetition.html#managing-software">Managing Software</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../07_reproducibility.html">Reproducibility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../07_reproducibility.html#what-is-reproducibility">What is reproducibility?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../07_reproducibility.html#necessary-components">Necessary components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../07_reproducibility.html#containers">Containers</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Final Project</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../final_project/overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../final_project/overview.html#objectives">Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../final_project/overview.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../final_project/overview.html#timeline">Timeline</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../final_project/examples.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../final_project/examples.html#pre-foss-survey">Pre-FOSS Survey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../final_project/examples.html#pre-foss-skills-workshop">Pre-FOSS Skills Workshop</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../final_project/examples.html#should-i-attend">Should I attend?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../final_project/examples.html#installing-software-for-foss">Installing software for FOSS</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">FOSS Fall 2021</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li><strong>GitHub Action and EHT Demo</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/github_action/eht.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a href="#id5"><span class="problematic" id="id6">|CyVerse_logo2|_</span></a></p>
+<p><a href="#id7"><span class="problematic" id="id8">|Home_Icon2|_</span></a>
+<a class="reference external" href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<div class="section" id="github-action-and-eht-demo">
+<h1><strong>GitHub Action and EHT Demo</strong><a class="headerlink" href="#github-action-and-eht-demo" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2><strong>Introduction</strong><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Building Docker images on your machine and then pushing it to
+DockerHub manually is sometime cumbersome.  Since we use Git and
+GitHub to keep track of all our source codes anyway, it will be great
+to ask GitHub to automatically build and push docker images for us
+whenever we change our codes.</p>
+<p>We will use one of the Event Horizon Telescope (EHT)’s imaging
+pipeline as an example.  The EHT is an international collaboration
+with a science goal to take pictures of black holes.  The EHT
+published its visibility data on <a class="reference external" href="https://datacommons.cyverse.org/browse/iplant/home/shared/commons_repo/curated/EHTC_FirstM87Results_Apr2019">CyVerse</a>
+and its software pipeline on <a class="reference external" href="https://github.com/eventhorizontelescope/2019-D01-02">GitHub</a> .</p>
+</div>
+<div class="section" id="fork-the-eht-pipeline">
+<h2><strong>Fork the EHT Pipeline</strong><a class="headerlink" href="#fork-the-eht-pipeline" title="Permalink to this headline">¶</a></h2>
+<p>When you are on the EHT pipeline GitHub repository, first, click the
+“Fork” badge/button to create your own repository.</p>
+<p>In your own repository, go to “Settings” to rename your repository to
+something readable for human, e.g., “eht-demo”.</p>
+<p>Because we will need to connect to DockerHub to publish our image, go
+to the “Secerts” tab in “Settings” and add the following two secrets:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>DOCKERHUB_USERNAME : your Docker Hub username
+
+DOCKERHUB_PASSWORD : your Docker Hub password
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-a-dockerfile">
+<h2><strong>Create a Dockerfile</strong><a class="headerlink" href="#create-a-dockerfile" title="Permalink to this headline">¶</a></h2>
+<p>To edit your version of the pipeline repository, let’s clone it to
+your “local” machines (laptop, desktop, atmosphere VM, etc).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:<span class="o">[</span>GITHUB_USERNAME<span class="o">]</span>/eht-demo.git
+</pre></div>
+</div>
+<p>Then, change-directory into your local repository and create a
+<code class="docutils literal notranslate"><span class="pre">wrapper.sh</span></code> script:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+python /usr/local/src/eht-imaging_pipeline.py <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+<p>Turn it into an run-able script by</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod <span class="m">755</span> wrapper.sh
+</pre></div>
+</div>
+<p>Then, add a new <code class="code docutils literal notranslate"><span class="pre">Dockerfile</span></code> with the follow content:</p>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="n">FROM</span> <span class="n">eventhorizontelescope</span><span class="o">/</span><span class="n">img</span><span class="o">-</span><span class="n">env</span>
+
+<span class="n">COPY</span> <span class="n">eht</span><span class="o">-</span><span class="n">imaging</span><span class="o">/</span><span class="n">eht</span><span class="o">-</span><span class="n">imaging_pipeline</span><span class="p">.</span><span class="n">py</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">src</span><span class="o">/</span>
+<span class="n">COPY</span> <span class="n">wrapper</span><span class="p">.</span><span class="n">sh</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span>
+
+<span class="n">WORKDIR</span> <span class="o">/</span><span class="n">img</span>
+<span class="n">ENTRYPOINT</span> <span class="p">[</span><span class="s">&quot;/usr/bin/wrapper.sh&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Commit all your files and push to GitHub:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add .
+git commit -m <span class="s1">&#39;For building FOSS demo Docker image&#39;</span>
+git push
+</pre></div>
+</div>
+</div>
+<div class="section" id="setup-github-action">
+<h2><strong>Setup GitHub Action</strong><a class="headerlink" href="#setup-github-action" title="Permalink to this headline">¶</a></h2>
+<p>Go back to your web browser and make sure that your own pipeline
+repository is updated.  Click the “Actions” tab.  Because you have not
+set up any GitHub Action, GitHub presents you many examples.  Let’s
+click on “Workflow for Python, Maven, Docker and more …” at the
+bottom of the page and look for the “Docker image” example.  Click
+“Set up this workflow” as a starting point.</p>
+<p>GitHub now presents you an online text editor that describes an Action
+Workflow.  Let’s just click “Start commit” to turn this into a Git
+commit.</p>
+<p>Once you are done, click the “Actions” tab again.  You will see the
+workflow is now set up.  It’s probably still in the GitHub Action work
+queue.  Wait a bit and it will turn into a running state.</p>
+<p>Your “Action” workflow should finish successfully.  However, it built
+an image call <code class="code docutils literal notranslate"><span class="pre">my-image-name</span></code> inside the Action build machine.
+The name is not right, and you cannot use this Docker image.</p>
+</div>
+<div class="section" id="edit-github-action">
+<h2><strong>Edit GitHub Action</strong><a class="headerlink" href="#edit-github-action" title="Permalink to this headline">¶</a></h2>
+<p>Click on the name your Action workflow and select the “Workflow file”
+tab, then click the pencil icon on the top right, GitHub gives you an
+online editor again.  Update the <code class="code docutils literal notranslate"><span class="pre">dockerimage.yml</span></code> file to:</p>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span>name: Docker Image CI
+
+on: [push]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag ${{ secrets.DOCKERHUB_USERNAME }}/eht-demo
+    - name: Login to Docker Hub
+      run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+    - name: Push to Docker Hub
+      run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/eht-demo:latest
+</pre></div>
+</div>
+<p>Once you are done, commit it.  And go back to “Actions” tab.  Because
+editing the Action workflow is itself a Git commit, it triggers GitHub
+Action to rerun the workflow.  If it works, you it should have built a
+Docker image and push it to Docker Hub.</p>
+</div>
+<div class="section" id="eht-image-reconstruction">
+<h2><strong>EHT Image Reconstruction</strong><a class="headerlink" href="#eht-image-reconstruction" title="Permalink to this headline">¶</a></h2>
+<p>Now, we are ready to perform an EHT image reconstruction to create
+your own black hole image!</p>
+<p>First, because it will take some time to download the Docker image,
+let’s start pulling it first onto your “local” machines (laptop,
+desktop, atmosphere VM, etc) in the background.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker pull <span class="o">[</span>DOCKERHUB_USERNAME<span class="o">]</span>/eht-demo &gt; git-pull-log <span class="p">&amp;</span>
+</pre></div>
+</div>
+<p>Let’s also create an empty work directory</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir ~/eht-demo
+<span class="nb">cd</span> ~/eht-demo
+</pre></div>
+</div>
+<p>Remember EHT published its data on CyVerse?  Let’s download a data file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget https://de.cyverse.org/anon-files//iplant/home/shared/commons_repo/curated/EHTC_FirstM87Results_Apr2019/uvfits/SR1_M87_2017_095_lo_hops_netcal_StokesI.uvfits
+</pre></div>
+</div>
+<p>You have both the data and software (in a Docker image).  Let’s
+perform the image reconstruction:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run --rm -v <span class="nv">$PWD</span>:/img <span class="o">[</span>DOCKERHUB_USERNAME<span class="o">]</span>/eht-demo -i SR1_M87_2017_095_lo_hops_netcal_StokesI.uvfits -o <span class="o">[</span>NAME<span class="o">]</span>.fits --savepdf
+</pre></div>
+</div>
+<p>It will take some time.  And it may work or may not work—depending
+on if you pull an old version of the pipeline repository, or a new
+version.</p>
+<p>If docker finished with an error message, you used the old version.
+And it is a great opportunity to see how convenient to see how GitHub
+Actions work.  If docker finished without an error, congratulations,
+you can skip the next paragraph.</p>
+<p>Go to GitHub on your browser, open
+<code class="code docutils literal notranslate"><span class="pre">eht-imaging/eht-imaging_pipeline.py</span></code>, and click the pencil icon
+to edit the file directly.  Add the following two lines:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;Agg&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>on line 50 and the commit from the GitHub website.  Because GitHub
+Actions “license” for changes on your repository, it will
+automatically rebuild your Docker image.  Once it is done, pull the
+new Docker image by:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker pull <span class="o">[</span>DOCKERHUB_USERNAME<span class="o">]</span>/eht-demo
+</pre></div>
+</div>
+<p>And now you can rerun your analysis with the new Docker image!</p>
+<p>Once it’s done, you will see two new files <code class="code docutils literal notranslate"><span class="pre">[NAME].fits</span></code> and
+<code class="code docutils literal notranslate"><span class="pre">[NAME].pdf</span></code> on the local machines.</p>
+<p>Here you go!  You just reconstructed your own black hole image!</p>
+</div>
+<div class="section" id="exercise">
+<h2><strong>Exercise</strong><a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
+<p>OK this is cool so far.  But the point of GitHub Actions is that it
+will rerun the workflow whenever you commit and push your repository
+to GitHub.  So try to make some silly changes to your local Git
+repository, push it to GitHub, and see Actions react to your edits.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, CyVerse
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

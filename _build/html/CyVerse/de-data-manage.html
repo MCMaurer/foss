@@ -1,0 +1,471 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Discovery Environment - Data Management &mdash; CyVerse Learning:    Foundational Open Science Skills 2021 spring-2021 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/cyverse.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/detail-expand.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/question-answer.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/cyverse.js"></script>
+        <script src="../_static/detail-expand.js"></script>
+        <script src="../_static/question-answer.js"></script>
+        <script src="../_static/intercom-script-for-learning.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Introduction to Cloud Computing" href="../cloud_comput/intro.html" />
+    <link rel="prev" title="Accessing Data Store" href="data_store.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CyVerse Learning:    Foundational Open Science Skills 2021
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                spring-2021
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Workshop Home</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Before FOSS Starts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../before/installation.html"><strong>Pre-FOSS Setup</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Key Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/schedule.html"><strong>Schedule</strong></a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.cyverse.org/foss#instructors">Instructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/code_of_conduct.html"><strong>Code of Conduct</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/open_sci_lab.html"><strong>Open Science Introductory Activity</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/goals.html">Goals and Approach</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/glossary.html"><strong>Glossary &amp; Acronyms</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Using CyVerse</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro_to_cyverse.html"><strong>About CyVerse</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_store.html"><strong>Accessing Data Store</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Discovery Environment - Data Management</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#de2-data-store-walkthrough">DE2 Data Store Walkthrough</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#leave-feedback-on-the-de2-layout-and-user-interface">Leave Feedback on the DE2 Layout and User Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#classic-de-data-store-walkthrough">Classic DE Data Store Walkthrough</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#additional-resources">Additional Resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Cyberinfrastructure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_comput/intro.html"><strong>Introduction to Cloud Computing</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_comput/atmo.html"><strong>Atmosphere</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_comput/xsede.html"><strong>Research Cyberinfrastructure associated with CyVerse</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cloud_comput/cyberinfrastructure.html"><strong>Other Cyberinfrastructure Projects</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Data Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Data_management/overview.html"><strong>Data Management Overview</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Data_management/FAIR.html"><strong>FAIR Data</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Data_management/dmp.html"><strong>Data Management Plans (DMP)</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Data_management/dmtools.html"><strong>Data Management Tools</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Essential Skills</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="de-data-analysis.html"><strong>Discovery Environment - Data Analysis</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="tool_integration_app_building_DE.html"><strong>Discovery Environment - Tools &amp; Apps</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="vice.html"><strong>Discovery Environment - VICE</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software_essentials/commandline.html"><strong>Command Line and the Unix Shell</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software_essentials/linux.html"><strong>Basics of Linux</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reproducible Science</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/intro.html"><strong>Introduction to Reproducible Science</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/communication.html"><strong>Communication</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/GitHub.html"><strong>GitHub Overview</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/GitHub.html#advanced-git-github-features">Advanced Git &amp; GitHub Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_science/websites.html"><strong>Websites &amp; Documentation</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/githubpages.html"><strong>GitHub Pages - a quick start</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">Containers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Containers/introtocontainers.html"><strong>Introduction to containers</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Containers/dockeronatmo.html">Launching a Docker app on Atmosphere</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Containers/dockerintro.html"><strong>Introduction to Docker</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Containers/dockeradvanced.html"><strong>Advanced Docker</strong></a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CyVerse Learning:    Foundational Open Science Skills 2021</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><strong>Discovery Environment - Data Management</strong></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/CyVerse/de-data-manage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a class="reference external" href="http://learning.cyverse.org/"><img alt="CyVerse_logo" src="../_images/cyverse_learning.png" style="width: 500px;" /></a></p>
+<p><a class="reference external" href="http://learning.cyverse.org/"><img alt="Home_Icon2" src="../_images/homeicon.png" style="width: 25px; height: 25px;" /></a>
+<a class="reference external" href="http://learning.cyverse.org/">Learning Center Home</a></p>
+<div class="section" id="discovery-environment-data-management">
+<h1><strong>Discovery Environment - Data Management</strong><a class="headerlink" href="#discovery-environment-data-management" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="../_images/de-icon.png"><img alt="DE_icon" src="../_images/de-icon.png" style="width: 60px; height: 50px;" /></a></p>
+<div class="section" id="de2-data-store-walkthrough">
+<h2>DE2 Data Store Walkthrough<a class="headerlink" href="#de2-data-store-walkthrough" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>Log in at <a class="reference external" href="https://de2.cyverse.org/">https://de2.cyverse.org/</a></p></li>
+</ul>
+<div class="admonition-learning-objectives admonition">
+<p class="admonition-title">learning objectives</p>
+<ul class="simple">
+<li><p>Recognize the data store environment and how to navigate it</p></li>
+<li><p>Use data store through GUI to interact with community datasets</p></li>
+<li><p>Describe how to create a directory in the data store</p></li>
+</ul>
+</div>
+</div></blockquote>
+<p><em>Data Window</em></p>
+<p><img alt="DE2_data_icon" src="../_images/de2_datastore1.png" /></p>
+<p><em>Community Data on DE2</em></p>
+<p><img alt="DE2_community_data" src="../_images/de2_datastore2.png" /></p>
+<p><em>Changing Locations on DE2</em></p>
+<p><img alt="DE2_change_location" src="../_images/de2_datastore3.png" /></p>
+<p><em>Sorting Folders in DE2</em></p>
+<p><img alt="DE2_sorting_options" src="../_images/de2_datastore4.png" /></p>
+<p><em>Navigate to the FOSS Folder</em></p>
+<p>The folder is inside <cite>Community Data</cite> and called <cite>foss</cite></p>
+<p><img alt="FOSS Folder Location" src="../_images/foss_folder_de2.png" /></p>
+<p>Which contains:</p>
+<p><img alt="FOSS Folder Contents" src="../_images/foss_folder_contents_de2.png" /></p>
+<p><em>Creating Folders in the Data Store</em></p>
+<p>Navigate to the <cite>spring-2021</cite> folder, you should see the following:</p>
+<p><img alt="FOSS Spring 2021 Contents" src="../_images/spring-2021_contents.png" /></p>
+<p>Inside the folder that matches the day that you attend FOSS,
+create a folder that matches your CyVerse username.</p>
+<p><img alt="Create a Folder" src="../_images/spring_day_contents.png" /></p>
+<p><em>What can we do with this?</em></p>
+<div class="admonition-question admonition">
+<p class="admonition-title">Question</p>
+<p>In small groups discuss the following questions:</p>
+<ol class="arabic simple">
+<li><p>How might you use the Data Store in your work?</p></li>
+<li><p>Does the data store allow your data to be FAIR?</p></li>
+<li><p>What is one way you could use the data store in FOSS for your group work?</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="leave-feedback-on-the-de2-layout-and-user-interface">
+<h2>Leave Feedback on the DE2 Layout and User Interface<a class="headerlink" href="#leave-feedback-on-the-de2-layout-and-user-interface" title="Permalink to this headline">¶</a></h2>
+<p><a href="https://sonora.cyverse.org/help" target="blank">Leave Feedback for the DE2</a></p>
+</div>
+<div class="section" id="classic-de-data-store-walkthrough">
+<h2>Classic DE Data Store Walkthrough<a class="headerlink" href="#classic-de-data-store-walkthrough" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>Log in at <a class="reference external" href="https://de.cyverse.org/">https://de.cyverse.org/</a></p></li>
+</ul>
+</div></blockquote>
+<p><img alt="DE_blank" src="../_images/DE_blank.png" /></p>
+<p><em>Data Window</em></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Open the data window and upload a file:</p></li>
+</ul>
+</div></blockquote>
+<p><img alt="DE_data_upload" src="../_images/DE_data_upload.png" /></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://wiki.cyverse.org/wiki/display/DEmanual/Creating+New+Files+and+Folders">Create a new text file</a> and share it with someone in the class:</p></li>
+</ul>
+</div></blockquote>
+<p><img alt="DE_dots_menu" src="../_images/DE_dots_menu.png" /></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://wiki.cyverse.org/wiki/display/DEmanual/Downloading+Files+and+Folders">Download</a> the shared file.</p></li>
+</ul>
+</div></blockquote>
+<p><em>Using metadata in the Classic DE</em></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE">Using metadata in the DE</a> :</p></li>
+</ul>
+</div></blockquote>
+<p><img alt="DE_metadata" src="../_images/DE_metadata.png" /></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://wiki.cyverse.org/wiki/display/DEmanual/Searching+for+Data+Items">Search</a> for data in the DE:</p></li>
+</ul>
+</div></blockquote>
+<p><img alt="DE_search" src="../_images/DE_search.png" /></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Try a simple search for the word “maize”</p></li>
+<li><p>Try an advanced search for attribute = subject and value = maize</p></li>
+<li><dl class="simple">
+<dt>Other options to be covered on Tuesday:</dt><dd><ul>
+<li><p><a class="reference external" href="https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Addingbulkmetadatatomultiplefilesorfolders">bulk metadata application</a></p></li>
+<li><p><a class="reference external" href="https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Usingmetadatatemplates">metadata templates</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<p><em>Advanced Metadata Usage in Classic DE</em></p>
+<p>The Data Commons provides advanced metadata features in the Discovery Environment, including:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Usingmetadatatemplates">metadata templates</a></p></li>
+</ul>
+<p><strong>Exercise:</strong>
+- Open the DE
+- Apply a Plant Ontology template to a folder.
+- Apply an ontology term to a file or folder.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Addingbulkmetadatatomultiplefilesorfolders">bulk metadata application</a></p></li>
+</ul>
+<p><strong>Exercise:</strong>
+1. Copy the B123 file to your home directory
+- Using icommands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ icd /iplant/home/<span class="nv">$username</span>
+$ icp -r /iplant/home/rwalls/B123 B123
+$ ils
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>In the DE:</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>create a folder in your home directory called <strong>B123</strong></p></li>
+<li><p>Move into B123</p></li>
+<li><p>Upload &gt;&gt; Import from URL…</p></li>
+<li><p>paste each of the URLs below into a slot. This must be done in two batches.</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/012.txt
+https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/123.txt
+https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/234.txt
+https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/345.txt
+https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/456.txt
+https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/567.txt
+https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/678.txt
+https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/789.txt
+https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/Rice_metadata.csv
+</pre></div>
+</div>
+</div></blockquote>
+<p>2. Apply metadata
+- In the DE apply the DE apply metadata to the contents of B123</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Browse to B123</p></li>
+<li><p>View the metadata for one of the files using the <em>Metadata</em> menu or the three dots (it should be blank)</p></li>
+<li><p>View the contents of the file <cite>Rice_metadata.csv</cite></p></li>
+<li><p>Browse back to your home directory</p></li>
+<li><p>Check the box next to B123</p></li>
+<li><p>Select <em>Metadata</em> &gt; <em>Apply Bulk Metadata</em></p></li>
+<li><p>Select the file B123/Rice_metadata.csv</p></li>
+<li><p>Browse back to B123</p></li>
+<li><p>View the metadata of the different files in the directory</p></li>
+</ul>
+</div></blockquote>
+<p>3. Advanced search
+- Click on the search magnifying glass
+- Click +
+- Change File Name to Metadata
+- Under Attribute, type <cite>treatment</cite>, under Value type <cite>cold</cite>
+- Hit Search</p>
+<div class="section" id="additional-resources">
+<h3>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://learning.cyverse.org/projects/discovery-environment-guide/en/latest/">DE Guide</a></p></li>
+<li><p><a class="reference external" href="https://wiki.cyverse.org/wiki/display/DEmanual/Table+of+Contents">DE Manual</a></p></li>
+<li><p><a class="reference external" href="https://learning.cyverse.org/projects/cyverse-group-project-quickstart/en/latest/index.html?highlight=group%20project">Using CyVerse for a shared project</a></p></li>
+</ul>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>Fix or improve this documentation:</strong></p>
+<ul class="simple">
+<li><p>On Github: <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/CyVerse/de-data-manage.rst" target="blank">Github Repo Link</a></p></li>
+<li><p>Send feedback: <a class="reference external" href="mailto:Tutorials&#37;&#52;&#48;CyVerse&#46;org">Tutorials<span>&#64;</span>CyVerse<span>&#46;</span>org</a></p></li>
+</ul>
+<hr class="docutils" />
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../cloud_comput/intro.html" class="btn btn-neutral float-right" title="Introduction to Cloud Computing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="data_store.html" class="btn btn-neutral float-left" title="Accessing Data Store" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, CyVerse.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
