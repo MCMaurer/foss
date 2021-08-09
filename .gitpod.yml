@@ -5,8 +5,6 @@ tasks:
     command: echo 'start script'
   - name: Make sure pip is up-to-date
     command: /home/gitpod/.pyenv/versions/3.8.10/bin/python3.8 -m pip install --upgrade pip
-  - name: Check pip install
-    command: pip install -r requirements.txt
 # Vscode extensions
 vscode:
   extensions:
