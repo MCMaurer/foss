@@ -4,8 +4,12 @@
 |CyVerse_logo|_
 
 Managing Data
-------------------------------
-.. admonition:: learning-objectives
+================================
+
+Data Management Intro
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. admonition:: Learning Objectives
 
        - Recognize data as the foundation of open science and be able to
          describe the "life cycle of data"
@@ -15,7 +19,7 @@ Managing Data
 
 
 Why should you care about data management?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------------------
 
 Data is the raw currency of open science. Most work centers on creating data or
 adding to its value. The goal of this section is to highlight how you can make
@@ -42,7 +46,7 @@ Data management skills produce self-describing datasets that:
 ----
 
 Data Self-assessment
-~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------
 
 **Part I: Basic questions**
 
@@ -90,7 +94,7 @@ Here are some questions about how you manage and work with data. We will complet
 ----
 
 Data Management Basics
-~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------
 
 Let's learn a little more about data so that we can evaluate your self-
 assessment responses.
@@ -110,7 +114,7 @@ assessment responses.
 ----
 
 Data Types
-~~~~~~~~~~
+------------------------------------
 
 Different types of data require different management practices.
 What are some data types and sources you might use in your work? (Adapted from
@@ -171,7 +175,7 @@ Here are some questions about how you manage and work with data. We will complet
 ----
 
 Best practices for the data life cycle
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------------------------
 
 **The most important thing to remember about data management is that you are
 not alone.** There are data management experts within your discipline, many of
@@ -326,7 +330,7 @@ data center). Here are some examples:
 ----
 
 References and Resources
-=================
+------------------------------------
 
 |DataOne best practices|
 
@@ -339,26 +343,6 @@ References and Resources
 FAIR Data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Data Management Plans
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-text
-
-Preregistration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-text
-
-CyVerse Data Store/Commons
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-text
-
-**Data Management Overview**
------------------------------
-
-**FAIR Data**
---------------
 
 .. admonition:: learning-objectives
 
@@ -367,7 +351,7 @@ text
        - Use self-assessments to evaluate the FAIRness of your data
 
 FAIR Principles
-~~~~~~~~~~~~~~~~~
+------------------------------------
 
 In 2016, the |FAIR Guiding Principles| for scientific data management and stewardship were published in Scientific Data. Read it.
 
@@ -417,7 +401,7 @@ In 2016, the |FAIR Guiding Principles| for scientific data management and stewar
 
 
 CARE Principles
-~~~~~~~~~~~~~~~~
+------------------------------------
 
 The |CARE principles| for Indigenous Data Governance were drafted at the International Data Week and Research Data Alliance Plenary co-hosted event “Indigenous Data Sovereignty Principles for the Governance of Indigenous Data Workshop,” 8 November 2018, Gaborone, Botswana.
 
@@ -447,7 +431,7 @@ The |CARE principles| for Indigenous Data Governance were drafted at the Interna
 
 
 FAIR - TLC
-~~~~~~~~~~~
+------------------------------------
 
 **Traceable, Licensed, and Connected**
 
@@ -455,7 +439,7 @@ FAIR - TLC
 
 
 How to get to FAIR?
-~~~~~~~~~~~~~~~~~~~~
+------------------------------------
 
 This is a question that only you can answer, that is because it depends on (among other things)
 
@@ -477,15 +461,15 @@ your data are:
 ----
 
 References and Resources
-=================
+------------------------------------
 
 https://www.nature.com/articles/sdata201618
 
 
 ----
 
-**Data Management Plans (DMP)**
---------------------------------
+Data Management Plans
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. admonition:: learning-objectives
 
@@ -536,7 +520,7 @@ these are serious consequences. Increasingly, funders realize this.
  - Avoid surprise costs
 
 Elements of a good DMP
-~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------
 
  - Information about data & data format(s)
 
@@ -573,7 +557,7 @@ Not only what, but *who* (roles).
 Extra challenges for collaborative projects.
 
 Machine actionable DMPs
-=======================
+------------------------------------
 
  - DMPs describe research methods that will evolve over the course of a project
  - to be a useful tool for researchers and others, the content must be updated to capture the methods that are employed and the data that are produced
@@ -583,7 +567,7 @@ Machine actionable DMPs
  (Source: https://doi.org/10.1371/journal.pcbi.1006750.g002)
 
 Tools for DMPs
-~~~~~~~~~~~~~~~~~~~
+------------------------------------
 
 .. admonition:: Exercise
 
@@ -593,7 +577,7 @@ Tools for DMPs
 ----
 
 References and Resources
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------
 
  - `NSF Guidelines on DMPs <https://www.nsf.gov/bio/biodmp.jsp>`_
  - https://dmptool.org/general_guidance
@@ -607,4 +591,12 @@ References and Resources
 
 
 ----
+
+Preregistration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+text
+
+CyVerse Data Store/Commons
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
