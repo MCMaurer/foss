@@ -23,7 +23,7 @@ Welcome to Foundational Open Science Skills!
         :caption: Workshop Content
 
         Intro to Open Science <01_intro_open_sci.rst>
-        Example Project Pipeline <02_example_pipeline.rst>
+        Project Management <02_project_management.rst>
         Managing Data <03_managing_data.rst>
         Documentation and Communication <04_documentation_communication.rst>
         Version Control <05_version_control.rst>

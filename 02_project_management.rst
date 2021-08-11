@@ -1,8 +1,10 @@
 .. include:: cyverse_rst_defined_substitutions.txt
 .. include:: custom_urls.txt
 
+|CyVerse_logo|_
+
 Project Management
-------------------------------
+================================
 
 Project management is a bit of a broad term, but we mean the ways you organize data, code, images, documents, and documentation within a project. If you've ever had to navigate someone else's computer or repository, you probably know that a poorly organized project can greatly reduce its openness. On the other hand, a well-organized project can:
 
@@ -15,15 +17,17 @@ It can be easy to overlook sound project management, opting for a "just get it d
 
 There is no single "right way" to organize and manage a project, and your specific needs may vary, but we will introduce a basic framework that can get you headed in the right direction. It will also help us introduce more advanced topics later on, as many of the skills and approaches we teach will be far more effective if the basic project organization is sound.
 
-
-
 For the duration of the workshop, we will be working with a basic example project pipeline, going from raw data to a simple report. While this example project is vastly simplified from a real research project, the basic steps are still found in most projects. The skills you learn to improve this example project will translate to larger and more complex research projects.
 
-Basic Steps
+General Project Steps
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Your project will almost certainly differ from this general workflow in some way, but many of the basic steps will be similar: you collect some data, manipulate it, analyze it, make some outputs, and produce some reports. There may be many additional steps and sub-steps for each of these processes, but the key thing is how they relate to each other and how you manage the relationships and organization of various files.
 
 1. Manage raw data
 ******************************
+
+
 
 - Data collection
 - Data entry
